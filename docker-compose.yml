@@ -1,20 +1,7 @@
 
 version: '3'
 
-# services:
-#   postgres:
-#     image: postgres:12
-#     restart: always
-#     environment:
-#       POSTGRES_PASSWORD: p4j4m4sII!
-#       POSTGRES_USER: postgres
-#       POSTGRES_DB: product_details
-#     networks:
-#       - maize_net
-
   maze:
-    depends_on:
-      - 'postgres'
     build:
       context: .
     networks:
