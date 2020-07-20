@@ -2,19 +2,19 @@ config:
   target: 'http://localhost:3001'
   phases:
   - duration: 30
-    arrivalRate: 6
+    arrivalRate: 4
     name: "Warm up the application"
   - duration: 10
-    arrivalRate: 15
+    arrivalRate: 9
     name: "High load"
   - duration: 30
     arrivalRate: 5
     name: "Normal load"
   - duration: 5
-    arrivalRate: 18
+    arrivalRate: 10
     name: "Quick spike"
   - duration: 20
-    arrivalRate: 3
+    arrivalRate: 2
     name: "Cool down"
   processor: "./artillery_functions.js"
 scenarios:
@@ -45,4 +45,4 @@ scenarios:
           url: '/reviews/?productID={{ id }}'
       - get:
           url: '/products?productID={{ id }}'
-      count: 22
+      count: 28
