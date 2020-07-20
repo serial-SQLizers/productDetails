@@ -1,5 +1,5 @@
 config:
-  target: 'http://localhost:3001'
+  target: 'http://ec2-3-17-134-198.us-east-2.compute.amazonaws.com'
   phases:
   - duration: 30
     arrivalRate: 6
@@ -45,4 +45,4 @@ scenarios:
           url: '/reviews/?productID={{ id }}'
       - get:
           url: '/products?productID={{ id }}'
-      count: 22
+      count: 10

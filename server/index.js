@@ -1,3 +1,4 @@
+require('newrelic');
 const express = require('express');
 const parser = require('body-parser');
 const cors = require('cors');
@@ -13,6 +14,9 @@ app.use(parser.json());
 app.use(cors());
 
 app.use('/', Router);
+app.get('/loaderio-a015962ddf9f2017d8e51e88c26f5daf', (req, res) => {
+  res.status(200).send('loaderio-a015962ddf9f2017d8e51e88c26f5daf');
+});
 
 app.post('/products', async (req, res) => {
   const { productID } = req.query;
