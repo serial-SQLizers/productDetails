@@ -2,12 +2,16 @@
 
 > Main product service on e-commerce site to showcase details, styles, and  a number of images for each product. My work in optimizing throughput and latency of CRUD server/routes and the database with a great volume of data. Specifically 10,000,000 distinct products, each with at least 5 reviews and 5 images. Deployed on AWS EC2 T2.micro instances to minimize cost, increase challenge of optimizing with minimal computing power.
 
-- Local performance goals of at least 1,000 requests/second with 50 milisecond or less response time and at most 1% error rate
-![loadtest1](/loadtest1.png)
+- Local performance goals of at least 1,000 requests per second with 50 millisecond or less response time and at most 1% error rate
+
 ![pooltest5](/poolloadtest5.png)
 
-- Deployed performance goals of at least 200 requests/second with 2,000 milisecond or less response time and at most 1% error rate
+- Local Artillery.io test showing result of 1,246 resquests per second, median response of 9.6 milliseconds, and 0 errors
+
+- Deployed performance goals of at least 200 requests per second with 2,000 millisecond or less response time and at most 1% error rate
 ![4EC2test](/4EC2test.png)
+
+- New Relic page showing Loader.io testing of deployed EC2 instances with result of 616 requests per second, 22.3 millisecond average response time and 0 errors
 
 ## Related Projects
 
