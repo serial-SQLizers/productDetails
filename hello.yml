@@ -1,20 +1,20 @@
 config:
-  target: 'http://ec2-3-17-134-198.us-east-2.compute.amazonaws.com'
+  target: 'http://MAIZEBALANCER-1909236606.us-east-2.elb.amazonaws.com'
   phases:
   - duration: 30
-    arrivalRate: 6
+    arrivalRate: 2
     name: "Warm up the application"
   - duration: 10
-    arrivalRate: 15
+    arrivalRate: 10
     name: "High load"
   - duration: 30
-    arrivalRate: 5
+    arrivalRate: 3
     name: "Normal load"
   - duration: 5
-    arrivalRate: 18
+    arrivalRate: 11
     name: "Quick spike"
   - duration: 20
-    arrivalRate: 3
+    arrivalRate: 1
     name: "Cool down"
   processor: "./artillery_functions.js"
 scenarios:
@@ -28,21 +28,21 @@ scenarios:
       - get:
           url: '/products/styles?productID={{ id }}'
       - get:
-          url: '/reviews/?productID={{ id }}'
+          url: '/reviews?productID={{ id }}'
       - get:
           url: '/products?productID={{ id }}'
       - function: "getRandomIdSecondHalf"
       - get:
           url: '/products/styles?productID={{ id }}'
       - get:
-          url: '/reviews/?productID={{ id }}'
+          url: '/reviews?productID={{ id }}'
       - get:
           url: '/products?productID={{ id }}'
       - function: "getRandomIdTenPercent"
       - get:
           url: '/products/styles?productID={{ id }}'
       - get:
-          url: '/reviews/?productID={{ id }}'
+          url: '/reviews?productID={{ id }}'
       - get:
           url: '/products?productID={{ id }}'
-      count: 10
+      count: 25
