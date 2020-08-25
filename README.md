@@ -3,11 +3,11 @@
 > Main product service on e-commerce site to showcase details, styles, and  a number of images for each product. My work in optimizing throughput and latency of CRUD server/routes and the database with a great volume of data. Specifically 10,000,000 distinct products, each with at least 5 reviews and 5 images. Deployed on AWS EC2 T2.micro instances to minimize cost, increase challenge of optimizing with minimal computing power.
 
 - Local performance goals of at least 1,000 requests/second with 50 milisecond or less response time and at most 1% error rate
-![loadtest1] (/load test1.png)
-![pooltest5] (/poolloadtest5.png)
+![loadtest1](/load test1.png)
+![pooltest5](/poolloadtest5.png)
 
 - Deployed performance goals of at least 200 requests/second with 2,000 milisecond or less response time and at most 1% error rate
-![4EC2test] (/4EC2test.png)
+![4EC2test](/4EC2test.png)
 
 ## Related Projects
 
