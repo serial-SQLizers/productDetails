@@ -16,7 +16,6 @@ _New Relic page showing Loader.io testing of deployed EC2 instances with result 
 ## Related Projects
 
   - https://github.com/serial-SQLizers/reviewsService
-  - https://github.com/hrden05/hipsy-similar-products
   - https://github.com/serial-SQLizers/QnA
   
 ## Table of Contents
