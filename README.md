@@ -5,10 +5,12 @@
 - Local performance goals of at least 1,000 requests per second with 50 millisecond or less response time and at most 1% error rate
 
 ![pooltest5](/poolloadtest5.png)
+
 _Local Artillery.io test showing result of 1,246 resquests per second, median response of 9.6 milliseconds, and 0 errors_
 
 - Deployed performance goals of at least 200 requests per second with 2,000 millisecond or less response time and at most 1% error rate
 ![4EC2test](/4EC2test.png)
+
 _New Relic page showing Loader.io testing of deployed EC2 instances with result of 616 requests per second, 22.3 millisecond average response time and 0 errors_
 
 ## Related Projects
